@@ -44,10 +44,13 @@ body {
 }
 /* ********************************************************************************Top Naigtion Styling******************/
 .top-nav {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 7rem;
+
+  position: fixed;
+  z-index: 999;
+  margin: 0 auto;
 }
 .website-logo {
   width: 10rem;
@@ -73,6 +76,7 @@ body {
 .header-section {
   display: flex;
   gap: 2rem;
+  margin-top: 7rem;
 }
 
 .top-header {
@@ -388,7 +392,7 @@ footer {
   }
 }
 @media all and (max-width: 800px) {
-  .secion {
+  .section {
     padding: 2.5rem 3.5rem;
   }
   .top-header,
@@ -405,15 +409,14 @@ footer {
   }
 }
 @media all and (max-width: 751px) {
-  .secion {
+  .section {
     padding: 2rem 3rem;
   }
-
+  .header-section {
+    margin-top: 5rem;
+  }
   .main-page {
     margin-bottom: 3.5rem;
-  }
-  .top-nav {
-    margin-bottom: 5rem;
   }
   .website-logo {
     width: 7rem;
@@ -481,7 +484,7 @@ footer {
   }
 }
 @media all and (max-width: 651px) {
-  .secion {
+  .section {
     padding: 2rem 2rem;
   }
   .mid-section {
